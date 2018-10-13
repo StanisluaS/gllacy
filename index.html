@@ -14,11 +14,11 @@
           <li class="main-menu-item catalog">
             <a href="#">Каталог</a>
             <ul class="catalog-menu">
-                 <li><a href="catalog-new">Новинки</a></li>
-                 <li><a href="catalog-creamy">Сливочное</a></li>
-                 <li><a href="catalog-sorbet">Щербеты</a></li>
-                 <li><a href="catalog-fruitice">Фруктовый лед</a></li>
-                 <li><a href="catalog-melorin">Мелорин</a></li>
+                 <li class="catalog-menu-item"><a href="#">Новинки</a></li>
+                 <li class="catalog-menu-item"><a href="catalog-creamy.html">Сливочное</a></li>
+                 <li class="catalog-menu-item"><a href="#">Щербеты</a></li>
+                 <li class="catalog-menu-item"><a href="#">Фруктовый лед</a></li>
+                 <li class="catalog-menu-item"><a href="#">Мелорин</a></li>
                </ul>
           </li>
           <li class="main-menu-item">
@@ -29,9 +29,18 @@
           </li>
         </ul>
         <ul class="main-menu-user">
-          <li class="main-menu-search"></li>
+          <li class="main-menu-search">
+            <a href="#" title="Поиск"></a>
+            <div class="box-search">
+              <!--Здесь будет форма-->
+            </div>
+          </li>
           <li class="main-menu-login">
-            <a href="#">Вход</a></li>
+            <a href="#">Вход</a>
+            <div class="box-login-entry">
+              <!--Здесь будет форма-->
+            </div>
+          </li>
           <li class="main-menu-basket">
             <a href="#">Пусто</a>
           </li>
@@ -171,6 +180,22 @@
         <a class="social social-fb" href="#">Фейсбук</a>
         <a class="social social-vk" href="#">Вконтакте</a>
       </section>
+      <div class="info">
+        <ul class="info-items">
+          <li class="info-item"><a href="#"><b>Для поставщиков</b></a></li>
+          <li class="info-item"><a href="#">О производстве</a></li>
+          <li class="info-item"><a href="#">Наши документы</a></li>
+          <li class="info-item"><a href="#">Экологические стандарты</a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <a class="footer-copyright-icon" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-htmlacademy.svg" width="109" height="39" alt="Логотип HTML Academy"></a>
+        <span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 2017</span>
+      </div>
     </footer>
+    <section class="modal modal-feedback">
+      <h3 class="visually-hidden">Форма обратной связи</h3>
+      <!--Здесь будет форма-->
+    </section>
   </body>
 </html>
