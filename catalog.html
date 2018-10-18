@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <a href="index.html" class="page-header__logo">
-        <img src="img/svg/logo.svg" width="" height="" alt="Логотип магазина Глэйси">
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
       </a>
       <nav class="main-nav">
         <ul class="main-menu-list">
@@ -43,6 +44,45 @@
           </li>
           <li class="main-menu-basket">
             <a href="#">2 товара</a>
+            <div class="basket-products">
+              <table class="basket-table">
+                <caption class="visually-hidden">Список товаров в корзине</caption>
+                <tbody>
+                  <tr class="basket-table-row">
+                    <td class="basket-table-cell cell-delete">
+                      <button class="btn btn-basket" type="button" value="Удалить товар">X</button>
+                    </td>
+                    <td class="basket-table-cell cell-imge">
+                      <img src="img/product-small-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                    </td>
+                    <td class="basket-table-cell cell-description">Пломбир с апельсиновым джемом</td>
+                    <td class="basket-table-cell cell-price">1.5 кг x <span>200 руб.</span></td>
+                    <td class="basket-table-cell cell-sum">300 руб.</td>
+                  </tr>
+                  <tr class="basket-table-row">
+                    <td class="basket-table-cell cell-delete">
+                      <button class="btn btn-basket" type="button" value="Удалить товар">X</button>
+                    </td>
+                    <td class="basket-table-cell cell-imge">
+                      <img src="img/product-small-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    </td>
+                    <td class="basket-table-cell cell-description">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="basket-table-cell cell-price">1.5 кг x <span>300 руб.</span></td>
+                    <td class="basket-table-cell cell-sum">450 руб.</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr class="basket-table-row-foot">
+                    <td class="basket-table-cell-total" colspan="5"><b>Итого: 750 руб.</b></td>
+                  </tr>
+                  <tr class="basket-table-row-foot">
+                    <td class="basket-table-cell-checkout" colspan="5">
+                      <a href="#" class="btn btn-checkout">Оформиить заказ</a>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
           </li>
         </ul>
       </nav>
@@ -69,133 +109,133 @@
             <div class="product-item-wrepper">
               <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a> </h3>
               <div class="product-item-image">
-                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <span class="hits-price"><b>310&#8381;</b></span>
-              <span class="hits-kilo">кг</span>
+              <span class="product-price"><b>310&#8381;</b></span>
+              <span class="product-kilo">кг</span>
             </div>
-            <button type="hits-button" name="button" value="Быстрый просмотр">Быстрый просмотр</button>
+            <button class="btn btn-product" type="button" value="Быстрый просмотр">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <div class="product-item-wrepper">
               <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a> </h3>
               <div class="product-item-image">
-                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-2.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <span class="hits-price"><b>380&#8381;</b></span>
-              <span class="hits-kilo">кг</span>
+              <span class="product-price"><b>380&#8381;</b></span>
+              <span class="product-kilo">кг</span>
             </div>
-            <button type="hits-button" name="button" value="Быстрый просмотр">Быстрый просмотр</button>
+            <button class="btn btn-product" type="button" value="Быстрый просмотр">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <div class="product-item-wrepper">
               <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a> </h3>
               <div class="product-item-image">
-                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-3.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <span class="hits-price"><b>355&#8381;</b></span>
-              <span class="hits-kilo">кг</span>
+              <span class="product-price"><b>355&#8381;</b></span>
+              <span class="product-kilo">кг</span>
             </div>
-            <button type="hits-button" name="button" value="Быстрый просмотр">Быстрый просмотр</button>
+            <button class="btn btn-product" type="button" value="Быстрый просмотр">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <div class="product-item-wrepper">
               <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a> </h3>
               <div class="product-item-image">
-                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <span class="hits-price"><b>415&#8381;</b></span>
-              <span class="hits-kilo">кг</span>
+              <span class="product-price"><b>415&#8381;</b></span>
+              <span class="product-kilo">кг</span>
             </div>
-            <button type="hits-button" name="button" value="Быстрый просмотр">Быстрый просмотр</button>
+            <button class="btn btn-product" type="button" value="Быстрый просмотр">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <div class="product-item-wrepper">
               <h3><a href="#">Сливочное с брусничным джемом</a> </h3>
               <div class="product-item-image">
-                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-5.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <span class="hits-price"><b>325&#8381;</b></span>
-              <span class="hits-kilo">кг</span>
+              <span class="product-price"><b>325&#8381;</b></span>
+              <span class="product-kilo">кг</span>
             </div>
-            <button type="hits-button" name="button" value="Быстрый просмотр">Быстрый просмотр</button>
+            <button class="btn btn-product" type="button" value="Быстрый просмотр">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <div class="product-item-wrepper">
               <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a> </h3>
               <div class="product-item-image">
-                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-6.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <span class="hits-price"><b>410&#8381;</b></span>
-              <span class="hits-kilo">кг</span>
+              <span class="product-price"><b>410&#8381;</b></span>
+              <span class="product-kilo">кг</span>
             </div>
-            <button type="hits-button" name="button" value="Быстрый просмотр">Быстрый просмотр</button>
+            <button class="btn btn-product" type="button" value="Быстрый просмотр">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <div class="product-item-wrepper">
               <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a> </h3>
               <div class="product-item-image">
-                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-7.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <span class="hits-price"><b>375&#8381;</b></span>
-              <span class="hits-kilo">кг</span>
+              <span class="product-price"><b>375&#8381;</b></span>
+              <span class="product-kilo">кг</span>
             </div>
-            <button type="hits-button" name="button" value="Быстрый просмотр">Быстрый просмотр</button>
+            <button class="btn btn-product" type="button" value="Быстрый просмотр">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <div class="product-item-wrepper">
               <h3><a href="#">Сливочное с шоколадной стружкой</a> </h3>
               <div class="product-item-image">
-                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-8.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <span class="hits-price"><b>320&#8381;</b></span>
-              <span class="hits-kilo">кг</span>
+              <span class="product-price"><b>320&#8381;</b></span>
+              <span class="product-kilo">кг</span>
             </div>
-            <button type="hits-button" name="button" value="Быстрый просмотр">Быстрый просмотр</button>
+            <button class="btn btn-product" type="button" value="Быстрый просмотр">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <div class="product-item-wrepper">
               <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a> </h3>
               <div class="product-item-image">
-                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-9.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <span class="hits-price"><b>440&#8381;</b></span>
-              <span class="hits-kilo">кг</span>
+              <span class="product-price"><b>440&#8381;</b></span>
+              <span class="product-kilo">кг</span>
             </div>
-            <button type="hits-button" name="button" value="Быстрый просмотр">Быстрый просмотр</button>
+            <button class="btn btn-product" type="button" value="Быстрый просмотр">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <div class="product-item-wrepper">
               <h3><a href="#">Сливочное с ментоловым сиропом</a> </h3>
               <div class="product-item-image">
-                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-10.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <span class="hits-price"><b>435&#8381;</b></span>
-              <span class="hits-kilo">кг</span>
+              <span class="product-price"><b>435&#8381;</b></span>
+              <span class="product-kilo">кг</span>
             </div>
-            <button type="hits-button" name="button" value="Быстрый просмотр">Быстрый просмотр</button>
+            <button class="btn btn-product" type="button" value="Быстрый просмотр">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <div class="product-item-wrepper">
               <h3><a href="#">Сливочное с кусочками черного шоколада</a> </h3>
               <div class="product-item-image">
-                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-11.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <span class="hits-price"><b>355&#8381;</b></span>
-              <span class="hits-kilo">кг</span>
+              <span class="product-price"><b>355&#8381;</b></span>
+              <span class="product-kilo">кг</span>
             </div>
-            <button type="hits-button" name="button" value="Быстрый просмотр">Быстрый просмотр</button>
+            <button class="btn btn-product" type="button" value="Быстрый просмотр">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <div class="product-item-wrepper">
               <h3><a href="#">Сливочное с мятным сиропом</a> </h3>
               <div class="product-item-image">
-                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-12.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
-              <span class="hits-price"><b>420&#8381;</b></span>
-              <span class="hits-kilo">кг</span>
+              <span class="product-price"><b>420&#8381;</b></span>
+              <span class="product-kilo">кг</span>
             </div>
-            <button type="hits-button" name="button" value="Быстрый просмотр">Быстрый просмотр</button>
+            <button class="btn btn-product" type="button" value="Быстрый просмотр">Быстрый просмотр</button>
           </li>
         </ul>
       </section>
@@ -229,7 +269,7 @@
         </ul>
       </div>
       <div class="footer-copyright">
-        <a class="footer-copyright-icon" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-htmlacademy.svg" width="109" height="39" alt="Логотип HTML Academy"></a>
+        <a class="footer-copyright-icon" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"></a>
         <span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 2017</span>
       </div>
     </footer>
