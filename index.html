@@ -31,19 +31,32 @@
         </ul>
         <ul class="main-menu-user">
           <li class="main-menu-search">
-            <a href="#" title="Поиск"></a>
+            <button class="visually-hidden" type="button">Поиск по сайту</button>
             <div class="box-search">
-              <!--Здесь будет форма-->
+              <form class="form-search" action="#" method="get">
+                <label class="visually-hidden" for="search">Поиск по сайту</label>
+                <input type="search" name="search" id="search" placeholder="Что ищем?">
+              </form>
             </div>
           </li>
           <li class="main-menu-login">
-            <a href="#">Вход</a>
+            <button class="btn-login-form" type="button" value="Форма входа">Вход</button>
             <div class="box-login-entry">
-              <!--Здесь будет форма-->
+              <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
+                <label for="user-email" class="visually-hidden">Электронная почта</label>
+                <input type="email" name="email" id="user-email" placeholder="Электронная почта">
+                <label for="user-password" class="visually-hidden">Пароль</label>
+                <input type="password" name="password" id="user-password" placeholder="Пароль">
+                <button class="btn-login-entry" type="submit">Войти</button>
+                <div class="help-registration">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </form>
             </div>
           </li>
           <li class="main-menu-basket">
-            <a href="#">Пусто</a>
+            <button class="btn-basket" type="button">Пусто</button>
           </li>
         </ul>
       </nav>
@@ -209,8 +222,16 @@
     </footer>
     <section class="modal modal-feedback">
       <h3 class="visually-hidden">Форма обратной связи</h3>
-      <button type="button" class="modal-close" value="Закрыть форму обратной связи">X</button>
-      <!--Здесь будет форма-->
+      <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+        <h3>Мы обязательно вам ответим!</h3>
+        <button type="button" class="modal-close" value="Закрыть форму обратной связи">X</button>
+        <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
+        <input id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+        <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
+        <input id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа">
+        <label class="visually-hidden" for="feedback-text">Текст обращения</label>
+        <textarea id="feedback-text" name="feedback-text" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+      </form>
     </section>
   </body>
 </html>

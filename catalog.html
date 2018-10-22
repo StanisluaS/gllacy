@@ -31,19 +31,32 @@
         </ul>
         <ul class="main-menu-user">
           <li class="main-menu-search">
-            <a href="#" title="Поиск"></a>
+            <button class="visually-hidden" type="button">Поиск по сайту</button>
             <div class="box-search">
-              <!--Здесь будет форма-->
+              <form class="form-search" action="#" method="get">
+                <label class="visually-hidden" for="search">Поиск по сайту</label>
+                <input type="search" name="search" id="search" placeholder="Что ищем?">
+              </form>
             </div>
           </li>
           <li class="main-menu-login">
-            <a href="#">Вход</a>
+            <button class="btn-login-form" type="button" value="Форма входа">Вход</button>
             <div class="box-login-entry">
-              <!--Здесь будет форма-->
+              <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
+                <label for="user-email" class="visually-hidden">Электронная почта</label>
+                <input type="email" name="email" id="user-email" placeholder="Электронная почта">
+                <label for="user-password" class="visually-hidden">Пароль</label>
+                <input type="password" name="password" id="user-password" placeholder="Пароль">
+                <button class="btn-login-entry" type="submit">Войти</button>
+                <div class="help-registration">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </form>
             </div>
           </li>
           <li class="main-menu-basket">
-            <a href="#">2 товара</a>
+            <button class="btn-basket full-basket" type="button">2 товара</button>
             <div class="basket-products">
               <table class="basket-table">
                 <caption class="visually-hidden">Список товаров в корзине</caption>
@@ -100,7 +113,48 @@
       <h1 class="page-title">Сливочное мороженое</h1>
       <section class="product-filter">
         <h2 class="visually-hidden">Фильтр продукции</h2>
-        <!--Здесь будет форма-->
+        <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-item">
+            <legend class="filter-item-title">Сортировка:</legend>
+            <select class="sort-list" name="sort">
+              <option value="по популярности">по популярности</option>
+              <option value="сначала не дорогие">сначала не дорогие</option>
+              <option value="сначала дорогие">сначала дорогие</option>
+              <option value="по жирности">по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend class="filter-item-title">Цена: <span class="min-price">100</span> руб. - <span class="max-price">500</span> руб.</legend>
+            <div class="min-max">
+              <!--Здесь будет ползунок-->
+            </div>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend class="filter-item-title">Жирность:</legend>
+            <input id="fat-null" type="radio" name="fat" value="fat-null">
+            <label for="fat-null">0%</label>
+            <input id="fat-ten" type="radio" name="fat" value="fat-ten" checked>
+            <label for="fat-ten">до 10%</label>
+            <input id="fat-less-thirty" type="radio" name="fat" value="fat-less-thirty">
+            <label for="fat-less-thirty">до 30%</label>
+            <input id="fat-more-thirty" type="radio" name="fat" value="fat-more-thirty">
+            <label for="fat-more-thirty">выше 30%</label>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend class="filter-item-title">Наполнители:</legend>
+            <input id="filler-choco" type="checkbox" name="choco" checked>
+            <label for="filler-choco">шоколадные</label>
+            <input id="filler-sugar" type="checkbox" name="sugar" checked>
+            <label for="filler-sugar">сахарные присыпки</label>
+            <input id="filler-fruits" type="checkbox" name="fruits">
+            <label for="filler-fruits">фрукты</label>
+            <input id="filler-syrups" type="checkbox" name="syrups">
+            <label for="filler-syrups">сиропы</label>
+            <input id="filler-jams" type="checkbox" name="jams">
+            <label for="filler-jams">джемы</label>
+          </fieldset>
+          <button class="btn-filler" type="submit">Применить</button>
+        </form>
       </section>
       <section class="product">
         <h2 class="visually-hidden">Каталог сливочного мороженого</h2>
