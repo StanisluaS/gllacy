@@ -33,25 +33,33 @@
           <li class="main-menu-search">
             <button class="visually-hidden" type="button">Поиск по сайту</button>
             <div class="box-search">
-              <form class="form-search" action="#" method="get">
-                <label class="visually-hidden" for="search">Поиск по сайту</label>
-                <input type="search" name="search" id="search" placeholder="Что ищем?">
+              <form class="form-search" action="#" method="post">
+                <p>
+                  <label class="visually-hidden" for="search">Поиск по сайту</label>
+                  <input type="search" name="search" id="search" placeholder="Что ищем?">
+                </p>
               </form>
             </div>
           </li>
           <li class="main-menu-login">
-            <button class="btn-login-form" type="button" value="Форма входа">Вход</button>
+            <button class="btn-login-form" type="button">Вход</button>
             <div class="box-login-entry">
               <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
-                <label for="user-email" class="visually-hidden">Электронная почта</label>
-                <input type="email" name="email" id="user-email" placeholder="Электронная почта">
-                <label for="user-password" class="visually-hidden">Пароль</label>
-                <input type="password" name="password" id="user-password" placeholder="Пароль">
-                <button class="btn-login-entry" type="submit">Войти</button>
-                <div class="help-registration">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </div>
+                <p>
+                  <label for="user-email" class="visually-hidden">Электронная почта</label>
+                  <input type="email" name="email" id="user-email" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <label for="user-password" class="visually-hidden">Пароль</label>
+                  <input type="password" name="password" id="user-password" placeholder="Пароль">
+                </p>
+                <p>
+                  <button class="btn-login-entry" type="submit">Войти</button>
+                  <div class="help-registration">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </p>
               </form>
             </div>
           </li>
@@ -63,7 +71,7 @@
                 <tbody>
                   <tr class="basket-table-row">
                     <td class="basket-table-cell cell-delete">
-                      <button class="btn btn-basket" type="button" value="Удалить товар">X</button>
+                      <button class="btn btn-basket" type="button" aria-label="Удалить товар"></button>
                     </td>
                     <td class="basket-table-cell cell-imge">
                       <img src="img/product-small-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
@@ -74,7 +82,7 @@
                   </tr>
                   <tr class="basket-table-row">
                     <td class="basket-table-cell cell-delete">
-                      <button class="btn btn-basket" type="button" value="Удалить товар">X</button>
+                      <button class="btn btn-basket" type="button" aria-label="Удалить товар"></button>
                     </td>
                     <td class="basket-table-cell cell-imge">
                       <img src="img/product-small-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
@@ -131,26 +139,26 @@
           </fieldset>
           <fieldset class="filter-item">
             <legend class="filter-item-title">Жирность:</legend>
-            <input id="fat-null" type="radio" name="fat" value="fat-null">
+            <input class="visually-hidden" id="fat-null" type="radio" name="fat" value="fat-null">
             <label for="fat-null">0%</label>
-            <input id="fat-ten" type="radio" name="fat" value="fat-ten" checked>
+            <input class="visually-hidden" id="fat-ten" type="radio" name="fat" value="fat-ten" checked>
             <label for="fat-ten">до 10%</label>
-            <input id="fat-less-thirty" type="radio" name="fat" value="fat-less-thirty">
+            <input class="visually-hidden" id="fat-less-thirty" type="radio" name="fat" value="fat-less-thirty">
             <label for="fat-less-thirty">до 30%</label>
-            <input id="fat-more-thirty" type="radio" name="fat" value="fat-more-thirty">
+            <input class="visually-hidden" id="fat-more-thirty" type="radio" name="fat" value="fat-more-thirty">
             <label for="fat-more-thirty">выше 30%</label>
           </fieldset>
           <fieldset class="filter-item">
             <legend class="filter-item-title">Наполнители:</legend>
-            <input id="filler-choco" type="checkbox" name="choco" checked>
+            <input class="visually-hidden" id="filler-choco" type="checkbox" name="choco" checked>
             <label for="filler-choco">шоколадные</label>
-            <input id="filler-sugar" type="checkbox" name="sugar" checked>
+            <input class="visually-hidden" id="filler-sugar" type="checkbox" name="sugar" checked>
             <label for="filler-sugar">сахарные присыпки</label>
-            <input id="filler-fruits" type="checkbox" name="fruits">
+            <input class="visually-hidden" id="filler-fruits" type="checkbox" name="fruits">
             <label for="filler-fruits">фрукты</label>
-            <input id="filler-syrups" type="checkbox" name="syrups">
+            <input class="visually-hidden" id="filler-syrups" type="checkbox" name="syrups">
             <label for="filler-syrups">сиропы</label>
-            <input id="filler-jams" type="checkbox" name="jams">
+            <input class="visually-hidden" id="filler-jams" type="checkbox" name="jams">
             <label for="filler-jams">джемы</label>
           </fieldset>
           <button class="btn-filler" type="submit">Применить</button>
@@ -295,23 +303,23 @@
       </section>
       <div class="pagination">
         <ul class="pagination-list">
-          <li class="pagination-item"><a>назад</a></li>
-          <li class="pagination-item pagination-item-active"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
-          <li class="pagination-item"><a href="#">5</a></li>
-          <li class="pagination-item"><a href="#">вперед</a></li>
+          <li class="pagination-item" aria-label="Перейти на одну страницу назад" disabled><a>назад</a></li>
+          <li class="pagination-item pagination-item-active" aria-label="Перейти на страницу 1" disabled><a>1</a></li>
+          <li class="pagination-item"><a href="#" aria-label="Перейти на страницу 2">2</a></li>
+          <li class="pagination-item"><a href="#" aria-label="Перейти на страницу 3">3</a></li>
+          <li class="pagination-item"><a href="#" aria-label="Перейти на страницу 4">4</a></li>
+          <li class="pagination-item"><a href="#" aria-label="Перейти на страницу 5">5</a></li>
+          <li class="pagination-item" aria-label="Перейти на одну страницу вперед"><a href="#">вперед</a></li>
         </ul>
       </div>
     </main>
     <footer class="main-footer">
       <div class="footer-social">
         <ul class="footer-social-list">
-          <li class="footer-social-item"><a class="social social-tw" href="#">Твиттер</a></li>
-          <li class="footer-social-item"><a class="social social-inst" href="#">Инстаграм</a></li>
-          <li class="footer-social-item"><a class="social social-fb" href="#">Фейсбук</a></li>
-          <li class="footer-social-item"><a class="social social-vk" href="#">Вконтакте</a></li>
+          <li class="footer-social-item"><a class="social social-tw" href="#" aria-label="Твиттер"></a></li>
+          <li class="footer-social-item"><a class="social social-inst" href="#" aria-label="Инстаграм"></a></li>
+          <li class="footer-social-item"><a class="social social-fb" href="#" aria-label="Фейсбук"></a></li>
+          <li class="footer-social-item"><a class="social social-vk" href="#" aria-label="Вконтакте"></a></li>
         </ul>
       </div>
       <div class="info">
