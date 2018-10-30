@@ -15,6 +15,25 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  color: #ffffff;
+  font-weight: bold;
+
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #ec573b;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #ef7761;
+}
+
+.btn:focus {
+  background-color: #ed5b3d;
+}
+
 .main-menu-list {
   line-height: 16px;
   font-weight: bold;
@@ -54,6 +73,22 @@ a {
   background-color: #ededed;
 }
 
+.catalog-menu,
+.box-search,
+.box-login-entry,
+.basket-products {
+  background-color: #f8f7f4;
+}
+
+.catalog-menu-item a {
+  font-weight: 400;
+  color: #323232;
+}
+
+.catalog-menu-item:first-child a {
+  font-weight: bold;
+}
+
 .catalog-menu-item:not(.catalog-menu-active) > a:hover {
   color: #323232;
 
@@ -84,10 +119,60 @@ a {
   background-color: #f8f7f4;
 }
 
-.main-menu-user .full-basket {
+.main-menu-user .search-field,
+.main-menu-login .user-email,
+.main-menu-login .user-password {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.box-login-entry {
+  background-color: #f8f7f4;
+}
+
+.box-login-entry input{
+  background-color: #ffffff;
+}
+
+.main-menu-login .btn-login-entry {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-menu-login .help-registration > a {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.main-menu-basket .full-basket {
+  font-weight: 500;
   color: #323232;
 
   background-color: #f7f6f3;
+}
+
+.main-menu-basket .basket-table-cell {
+  line-height: 16px;
+  color: #323232;
+}
+
+.cell-price span {
+  color: #999999;
+}
+
+.basket-table-cell.basket-total {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.main-menu-basket .btn-checkout {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 .working-hours {
@@ -100,4 +185,97 @@ a {
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
+}
+
+.slider {
+  list-style: none;
+}
+
+.slider-item {
+  text-align: center;
+}
+
+.slider-title {
+  font-size: 60px;
+  line-height: 60.35px;
+  font-weight: bold;
+}
+
+.sliders .btn-slider {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.slider-control .slider-control-list {
+  list-style: none;
+}
+
+.stock-container h3 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.stock-container p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.stock-container .btn-stock {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.hits-container .hits-list,
+.product .product-list {
+  list-style: none;
+}
+
+.hits-list a,
+.product-list a {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: underline;
+
+  text-align: center;
+}
+
+.hits-list span,
+.product-list span {
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.hits-list .hits-price,
+.product-list .product-price {
+  font-size: 45px;
+}
+
+.hits-list .hits-kilo,
+.product-list .product-kilo {
+  font-size: 30px;
+}
+
+.about-shop {
+  background-color: #efe5d1;
+  background-image: url("../img/wafer.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.about-shop-headline {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  font-weight: 500;
+}
+
+.about-shop-items {
+  list-style: none;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
 }
