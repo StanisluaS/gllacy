@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -12,7 +14,7 @@
       </a>
       <nav class="main-nav">
         <ul class="main-menu-list">
-          <li class="main-menu-item catalog main-menu-active">
+          <li class="main-menu-item main-menu-active">
             <a href="#">Каталог</a>
             <ul class="catalog-menu">
                  <li class="catalog-menu-item"><a href="#">Новинки</a></li>
@@ -36,7 +38,7 @@
               <form class="form-search" action="#" method="post">
                 <p>
                   <label class="visually-hidden" for="search">Поиск по сайту</label>
-                  <input type="search" name="search" id="search" placeholder="Что ищем?">
+                  <input class="search-field" type="search" name="search" id="search" placeholder="Что ищем?">
                 </p>
               </form>
             </div>
@@ -46,12 +48,12 @@
             <div class="box-login-entry">
               <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                  <label for="user-email" class="visually-hidden">Электронная почта</label>
-                  <input type="email" name="email" id="user-email" placeholder="Электронная почта">
+                  <label class="visually-hidden" for="user-email">Электронная почта</label>
+                  <input class="user-email" type="email" name="email" id="user-email" placeholder="Электронная почта">
                 </p>
                 <p>
-                  <label for="user-password" class="visually-hidden">Пароль</label>
-                  <input type="password" name="password" id="user-password" placeholder="Пароль">
+                  <label class="visually-hidden" for="user-password">Пароль</label>
+                  <input class="user-password" type="password" name="password" id="user-password" placeholder="Пароль">
                 </p>
                 <p>
                   <button class="btn-login-entry" type="submit">Войти</button>
@@ -71,7 +73,7 @@
                 <tbody>
                   <tr class="basket-table-row">
                     <td class="basket-table-cell cell-delete">
-                      <button class="btn btn-basket" type="button" aria-label="Удалить товар"></button>
+                      <button class="btn btn-delete" type="button" aria-label="Удалить товар"></button>
                     </td>
                     <td class="basket-table-cell cell-imge">
                       <img src="img/product-small-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
@@ -82,7 +84,7 @@
                   </tr>
                   <tr class="basket-table-row">
                     <td class="basket-table-cell cell-delete">
-                      <button class="btn btn-basket" type="button" aria-label="Удалить товар"></button>
+                      <button class="btn btn-delete" type="button" aria-label="Удалить товар"></button>
                     </td>
                     <td class="basket-table-cell cell-imge">
                       <img src="img/product-small-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
@@ -98,7 +100,7 @@
                   </tr>
                   <tr class="basket-table-row-foot">
                     <td class="basket-table-cell-checkout" colspan="5">
-                      <a href="#" class="btn btn-checkout">Оформиить заказ</a>
+                      <a class="btn btn-checkout" href="#">Оформиить заказ</a>
                     </td>
                   </tr>
                 </tfoot>
@@ -139,27 +141,49 @@
           </fieldset>
           <fieldset class="filter-item">
             <legend class="filter-item-title">Жирность:</legend>
-            <input class="visually-hidden" id="fat-null" type="radio" name="fat" value="fat-null">
-            <label for="fat-null">0%</label>
-            <input class="visually-hidden" id="fat-ten" type="radio" name="fat" value="fat-ten" checked>
-            <label for="fat-ten">до 10%</label>
-            <input class="visually-hidden" id="fat-less-thirty" type="radio" name="fat" value="fat-less-thirty">
-            <label for="fat-less-thirty">до 30%</label>
-            <input class="visually-hidden" id="fat-more-thirty" type="radio" name="fat" value="fat-more-thirty">
-            <label for="fat-more-thirty">выше 30%</label>
+            <ul class="filler-fat-list">
+              <li class="filler-fat-item">
+                <input class="visually-hidden" id="fat-null" type="radio" name="fat" value="fat-null">
+                <label for="fat-null">0%</label>
+              </li>
+              <li class="filler-fat-item">
+                <input class="visually-hidden" id="fat-ten" type="radio" name="fat" value="fat-ten" checked>
+                <label for="fat-ten">до 10%</label>
+              </li>
+              <li class="filler-fat-item">
+                <input class="visually-hidden" id="fat-less-thirty" type="radio" name="fat" value="fat-less-thirty">
+                <label for="fat-less-thirty">до 30%</label>
+              </li>
+              <li class="filler-fat-item">
+                <input class="visually-hidden" id="fat-more-thirty" type="radio" name="fat" value="fat-more-thirty">
+                <label for="fat-more-thirty">выше 30%</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="filter-item">
             <legend class="filter-item-title">Наполнители:</legend>
-            <input class="visually-hidden" id="filler-choco" type="checkbox" name="choco" checked>
-            <label for="filler-choco">шоколадные</label>
-            <input class="visually-hidden" id="filler-sugar" type="checkbox" name="sugar" checked>
-            <label for="filler-sugar">сахарные присыпки</label>
-            <input class="visually-hidden" id="filler-fruits" type="checkbox" name="fruits">
-            <label for="filler-fruits">фрукты</label>
-            <input class="visually-hidden" id="filler-syrups" type="checkbox" name="syrups">
-            <label for="filler-syrups">сиропы</label>
-            <input class="visually-hidden" id="filler-jams" type="checkbox" name="jams">
-            <label for="filler-jams">джемы</label>
+            <ul  class="filter-ingredient-list">
+              <li class="filter-ingredient-item">
+                <input class="visually-hidden" id="ingredient-choco" type="checkbox" name="choco" checked>
+                <label for="ingredient-choco">шоколадные</label>
+              </li>
+              <li class="filter-ingredient-item">
+                <input class="visually-hidden" id="ingredient-sugar" type="checkbox" name="sugar" checked>
+                <label for="ingredient-sugar">сахарные присыпки</label>
+              </li>
+              <li class="filter-ingredient-item">
+                <input class="visually-hidden" id="ingredient-fruits" type="checkbox" name="fruits">
+                <label for="ingredient-fruits">фрукты</label>
+              </li>
+              <li class="filter-ingredient-item">
+                <input class="visually-hidden" id="ingredient-syrups" type="checkbox" name="syrups">
+                <label for="ingredient-syrups">сиропы</label>
+              </li>
+              <li class="filter-ingredient-item">
+                <input class="visually-hidden" id="ingredient-jams" type="checkbox" name="jams">
+                <label for="ingredient-jams">джемы</label>
+              </li>
+            </ul>
           </fieldset>
           <button class="btn-filler" type="submit">Применить</button>
         </form>

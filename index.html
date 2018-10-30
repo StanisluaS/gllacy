@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -31,12 +33,12 @@
         </ul>
         <ul class="main-menu-user">
           <li class="main-menu-search">
-            <button class="visually-hidden" type="button">Поиск по сайту</button>
+            <button class="btn-search" type="button" aria-label="Поиск по сайту"></button>
             <div class="box-search">
               <form class="form-search" action="#" method="post">
                 <p>
                   <label class="visually-hidden" for="search">Поиск по сайту</label>
-                  <input type="search" name="search" id="search" placeholder="Что ищем?">
+                  <input class="search-field" type="search" name="search" id="search" placeholder="Что ищем?">
                 </p>
               </form>
             </div>
@@ -46,12 +48,12 @@
             <div class="box-login-entry">
               <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                  <label for="user-email" class="visually-hidden">Электронная почта</label>
-                  <input type="email" name="email" id="user-email" placeholder="Электронная почта">
+                  <label class="visually-hidden" for="user-email">Электронная почта</label>
+                  <input class="user-email" type="email" name="email" id="user-email" placeholder="Электронная почта">
                 </p>
                 <p>
-                  <label for="user-password" class="visually-hidden">Пароль</label>
-                  <input type="password" name="password" id="user-password" placeholder="Пароль">
+                  <label class="visually-hidden" for="user-password">Пароль</label>
+                  <input class="user-password" type="password" name="password" id="user-password" placeholder="Пароль">
                 </p>
                 <p>
                   <button class="btn-login-entry" type="submit">Войти</button>
@@ -92,12 +94,17 @@
           </li>
         </ul>
         <div class="slider-control">
-          <input class="visually-hidden" type="radio" name="toggle-slider" id="control1" checked>
-          <input class="visually-hidden" type="radio" name="toggle-slider" id="control2">
-          <input class="visually-hidden" type="radio" name="toggle-slider" id="control3">
-          <label for="control1" aria-label="Слайд 1"></label>
-          <label for="control2" aria-label="Слайд 2"></label>
-          <label for="control3" aria-label="Слайд 3"></label>
+          <ul class="slider-control -list">
+            <li class="slider-control-item slider-control-active">
+              <button class="btn-slider-control" type="button">Слайд 1</button>
+            </li>
+            <li class="slider-control-item">
+              <button class="btn-slider-control" type="button">Слайд 2</button>
+            </li>
+            <li class="slider-control-item">
+              <button class="btn-slider-control" type="button">Слайд 3</button>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="stock-container">
@@ -182,7 +189,11 @@
         </article>
         <div class="blog-subscription">
           <p class="blog-subscription-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
-          <!--Здесь будет форма-->
+          <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="subscription-email">Ваша электронная почта</label>
+            <input class="subscription-email" id="subscription-email" type="email" name="email" placeholder="Электронная почта">
+            <button class="btn btn-subscription" type="submit">Отправить</button>
+          </form>
         </div>
       </section>
       <section class="contacts">
@@ -202,7 +213,7 @@
               <b>8 812 450-25-25</b><br>
               (с 10 до 20 ежедневно)
           </p>
-          <a href="form.html" class="btn btn-feedback">Форма обратной связи</a>
+          <a class="btn btn-feedback" href="form.html">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -232,18 +243,18 @@
       <h3 class="visually-hidden">Форма обратной связи</h3>
       <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
         <h3>Мы обязательно вам ответим!</h3>
-        <button type="button" class="modal-close" aria-label="Закрыть форму обратной связи"></button>
+        <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи"></button>
         <p>
           <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
-          <input id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+          <input class="feedback-name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
         </p>
         <p>
           <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
-          <input id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа">
+          <input class="feedback-email" id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа">
         </p>
         <p>
           <label class="visually-hidden" for="feedback-text">Текст обращения</label>
-          <textarea id="feedback-text" name="feedback-text" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea class="feedback-text" id="feedback-text" name="feedback-text" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
         </p>
       </form>
     </section>

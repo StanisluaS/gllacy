@@ -1,3 +1,103 @@
 body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+
   background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-menu-list {
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.main-menu-user {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.main-menu-list,
+.main-menu-user,
+.catalog-menu {
+  list-style: none;
+}
+
+.main-menu-list a {
+  color: #ffffff;
+}
+
+.main-menu-item > a {
+  text-decoration: underline;
+}
+
+.main-menu-item:not(.main-menu-active) > a:hover {
+  color: #333333;
+  text-decoration: none;
+
+  background-color: #f7f6f3;
+}
+
+.main-menu-item:not(.main-menu-active) > a:focus {
+  color: #333333;
+  text-decoration: none;
+
+  background-color: #ededed;
+}
+
+.catalog-menu-item:not(.catalog-menu-active) > a:hover {
+  color: #323232;
+
+  background-color: #fbded7;
+}
+
+.catalog-menu-item:not(.catalog-menu-active) > a:focus {
+  color: #323232;
+
+  background-color: #f6b5a5;
+}
+
+.main-menu-active > a,
+.catalog-menu-active > a {
+  background-color: #d07058;
+}
+
+.main-menu-user [type="button"] {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-menu-user [type="button"]:hover {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.main-menu-user .full-basket {
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+
+.working-hours {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.phone {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
 }
