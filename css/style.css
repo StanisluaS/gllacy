@@ -140,11 +140,16 @@ a {
   line-height: 24px;
 }
 
-.main-menu-login .help-registration > a {
+.help-registration a {
   font-size: 13px;
   line-height: 24px;
   color: #323232;
   text-decoration: underline;
+}
+
+.help-registration a:hover,
+.help-registration a:focus {
+  color: #e84d37;
 }
 
 .main-menu-basket .full-basket {
@@ -232,8 +237,13 @@ a {
   list-style: none;
 }
 
-.hits-list a,
-.product-list a {
+.hits-item:hover,
+.product-item:hover {
+  background-color: #9bafa3;
+}
+
+.hits-item a,
+.product-item a {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
@@ -241,6 +251,11 @@ a {
   text-decoration: underline;
 
   text-align: center;
+}
+
+.hits-item a:hover,
+.product-item a:focus {
+  color: #e84d37;
 }
 
 .hits-list span,
@@ -278,4 +293,98 @@ a {
   font-size: 16px;
   line-height: 22px;
   color: #323232;
+}
+
+.blog-new {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.blog-new-headline {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.blog-new-link {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.blog-subscription {
+  background-color: #f8f7f4;
+}
+
+.blog-subscription-text {
+  color: #5a5a5a;
+}
+
+.subscription-email {
+  line-height: 24px;
+  color: #999999;
+
+  background-color: #ffffff;
+}
+
+.btn-subscription {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contacts-address {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.contacts-address strong,
+.contacts-address b {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.btn-feedback {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.info-items a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.info-items a:hover,
+.info-items a:hover {
+  color: #ffbc9e;
+}
+
+.info-items:first-child a {
+  font-weight: bold;
+}
+
+.footer-copyright span {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer-copyright a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+  color: #ffbc9e;
 }
