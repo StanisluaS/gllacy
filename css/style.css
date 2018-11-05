@@ -15,6 +15,12 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .btn {
   color: #ffffff;
   font-weight: 700;
@@ -34,7 +40,34 @@ a {
   background-color: #ed5b3d;
 }
 
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 9px;
+}
+
+.page-header-logo {
+  width: 154px;
+  height: 64px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 992px;
+}
+
+.main-nav-item {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .main-menu-list {
+  margin-left: 24px;
+
   line-height: 16px;
   font-weight: 700;
 }
@@ -202,6 +235,7 @@ a {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  text-align: right;
 }
 
 .phone {
@@ -287,6 +321,8 @@ a {
 }
 
 .hits-item a:hover,
+.product-item a:hover,
+.hits-item a:focus,
 .product-item a:focus {
   color: #e84d37;
 }
@@ -543,7 +579,6 @@ a {
 .btn-filler:focus {
   color: #323232;
 
-  border: none;
   background-color: #ffffff;
 }
 
@@ -558,17 +593,17 @@ a {
   font-weight: 500;
 }
 
-.pagination-item:not(.pagination-item-active) a:hover {
+.pagination-item:not(.pagination-active):not(.pagination-disabled) a:hover {
   background-color: #9db1a5;
 }
 
-.pagination-item a:focus {
+.pagination-item:not(.pagination-active):not(.pagination-disabled) a:focus {
   color: #323232;
 
   background-color: #ffffff;
 }
 
-.pagination-item-active a {
+.pagination-active a {
   color: #323232;
 
   background-color: #ffffff;
