@@ -45,6 +45,7 @@ a {
   flex-wrap: wrap;
   justify-content: flex-end;
   margin-top: 9px;
+  margin-bottom: 275px;
 }
 
 .page-header-logo {
@@ -56,7 +57,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 992px;
+  margin-left: 14px;
 }
 
 .main-nav-item {
@@ -66,13 +67,18 @@ a {
 }
 
 .main-menu-list {
-  margin-left: 24px;
+  width: 540px;
+  padding: 10px;
 
   line-height: 16px;
   font-weight: 700;
 }
 
 .main-menu-user {
+  justify-content: flex-end;
+  width: 360px;
+  margin-left: 50px;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -232,15 +238,23 @@ a {
 }
 
 .working-hours {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
   text-align: right;
 }
 
+.working-hours li:first-child {
+  margin-bottom: 5px;
+}
+
 .phone {
   font-size: 22px;
-  line-height: 24px;
+  line-height: 28px;
   font-weight: 700;
 }
 
