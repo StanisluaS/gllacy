@@ -42,9 +42,13 @@ a {
 
 .main-header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
+  flex-wrap: wrap;
   margin-top: 9px;
+  
+}
+
+.main-header.general {
   margin-bottom: 275px;
 }
 
@@ -56,19 +60,19 @@ a {
 .main-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-left: 14px;
 }
 
 .main-nav-item {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .main-menu-list {
   width: 540px;
-  padding: 10px;
+  padding: 0 10px;
 
   line-height: 16px;
   font-weight: 700;
@@ -259,7 +263,13 @@ a {
 }
 
 .slider {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.sliders {
+  margin-bottom: 40px;
 }
 
 .slider-item {
@@ -277,8 +287,15 @@ a {
   line-height: 44px;
 }
 
-.slider-control .slider-control-list {
+.slider-control-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+}
+
+.stock-container  {
+  margin-bottom: 40px;
 }
 
 .stock-container h3 {
@@ -298,7 +315,15 @@ a {
   line-height: 24px;
 }
 
+.stock-container-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
 .stock-container-item {
+  width: 560px;
+	
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -313,9 +338,24 @@ a {
   background-image: url(../img/chocolate-bg.jpg);
 }
 
-.hits-container .hits-list,
-.product .product-list {
+.hits-container {
+  margin-bottom: 40px;
+}
+
+.hits-list,
+.product-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
   list-style: none;
+}
+
+.hits-item,
+.product-item {
+  width: 267px;
 }
 
 .hits-item:hover,
@@ -341,6 +381,11 @@ a {
   color: #e84d37;
 }
 
+.hits-item-image img{
+ width: 267px;
+ height: 267px;
+}
+
 .hits-list span,
 .product-list span {
   line-height: 45px;
@@ -358,6 +403,9 @@ a {
 }
 
 .about-shop {
+  margin-bottom: 40px;
+  padding: 20px 25px;  
+	
   background-color: #efe5d1;
   background-image: url("../img/wafer.png");
   background-position: 0 0;
@@ -365,6 +413,9 @@ a {
 }
 
 .about-shop-headline {
+  margin: 0;
+  padding: 0;
+	
   font-size: 24px;
   line-height: 30px;
   color: #323232;
@@ -372,10 +423,36 @@ a {
 }
 
 .about-shop-items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+	
   list-style: none;
   font-size: 16px;
   line-height: 22px;
   color: #323232;
+}
+
+.about-shop-item {
+  width: 470px;
+  margin-top: 25px;
+  padding-left: 55px;
+}
+
+.blog {
+  margin-bottom: 40px;  
+}
+
+.blog-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-item {
+  width: 520px;
+  padding: 20px;
 }
 
 .blog-new {
@@ -437,6 +514,15 @@ a {
 .btn-subscription {
   font-size: 18px;
   line-height: 24px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts {
+  margin-bottom: 10px;
 }
 
 .contacts-address {

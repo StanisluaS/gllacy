@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header general">
         <a class="page-header-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
         </a>
@@ -77,8 +77,9 @@
         </ul>
       </header>
     </div>
-    <main class="container">
-      <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
+    <main>
+	  <div class="container">
+	    <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <section class="sliders">
         <ul class="slider">
           <li class="slider-item">
@@ -113,7 +114,8 @@
       </section>
       <section class="stock-container">
         <h2 class="visually-hidden">Специальные предложения</h2>
-        <div class="stock-container-item">
+		<div class="stock-container-items">
+		  <div class="stock-container-item">
           <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="btn btn-stock" href="#">Хочу варенье!</a>
@@ -123,6 +125,7 @@
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="btn btn-stock" href="#">Хочу шоколадки!</a>
         </div>
+		</div>        
       </section>
       <section class="hits-container">
         <ul class="hits-list">
@@ -177,9 +180,9 @@
         <ul class="about-shop-items">
           <li class="about-shop-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </li>
-          <li class="about-shop-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+		  <li class="about-shop-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </li>
-          <li class="about-shop-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+          <li class="about-shop-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
           <li class="about-shop-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
           </li>
@@ -187,19 +190,22 @@
       </section>
       <section class="blog">
         <h3 class="visually-hidden">Блог магазина</h3>
-        <article class="blog-new">
-          <h3 class="blog-new-headline">Новое в нашем блоге</h3>
-          <a class="blog-new-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-        </article>
-        <div class="blog-subscription">
-          <p class="blog-subscription-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="subscription-email">Ваша электронная почта</label>
-            <input class="subscription-email" id="subscription-email" type="email" name="email" placeholder="Электронная почта">
-            <button class="btn btn-subscription" type="submit">Отправить</button>
-          </form>
-        </div>
+		  <div class="blog-wrapper">
+		    <article class="blog-new blog-item">
+              <h3 class="blog-new-headline">Новое в нашем блоге</h3>
+              <a class="blog-new-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            </article>
+            <div class="blog-subscription blog-item">
+              <p class="blog-subscription-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
+              <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="subscription-email">Ваша электронная почта</label>
+                <input class="subscription-email" id="subscription-email" type="email" name="email" placeholder="Электронная почта">
+              <button class="btn btn-subscription" type="submit">Отправить</button>
+            </form>
+          </div>
+		</div>        	    
       </section>
+	  </div>
       <section class="contacts">
         <h2 class="visually-hidden">Где мы находимся</h2>
         <div class="contacts-map">
@@ -221,13 +227,14 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="footer-social">
+	<div class="container">
+	  <footer class="main-footer">
+        <div class="footer-social">
         <ul class="footer-social-list">
-          <li class="footer-social-item"><a class="social social-tw" href="#" aria-label="Твиттер"></a></li>
-          <li class="footer-social-item"><a class="social social-inst" href="#" aria-label="Инстаграм"></a></li>
-          <li class="footer-social-item"><a class="social social-fb" href="#" aria-label="Фейсбук"></a></li>
-          <li class="footer-social-item"><a class="social social-vk" href="#" aria-label="Вконтакте"></a></li>
+          <li class="footer-social-item"><a class="social social-tw" href="#" aria-label="Твиттер">Твиттер</a></li>
+          <li class="footer-social-item"><a class="social social-inst" href="#" aria-label="Инстаграм">Инстаграм</a></li>
+          <li class="footer-social-item"><a class="social social-fb" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+          <li class="footer-social-item"><a class="social social-vk" href="#" aria-label="Вконтакте">Вконтакте</a></li>
         </ul>
       </div>
       <div class="info">
@@ -242,7 +249,9 @@
         <a class="footer-copyright-icon" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"></a><br>
         <span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 2017</span>
       </div>
-    </footer>
+      </footer>
+	</div>
+    
     <section class="modal modal-feedback">
       <h3 class="visually-hidden">Форма обратной связи</h3>
       <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
