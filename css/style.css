@@ -8,7 +8,16 @@ body {
   font-weight: 400;
   color: #ffffff;
 
+  
+}
+
+.site-wrapper {  
+  min-width: 1250px;
+
   background-color: #849d8f;
+  background-image: url("../img/slider-1.png");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -72,7 +81,8 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-top: 9px;
+  margin-bottom: 270px;
+  padding-top: 9px;
 }
 
 .main-header.catalog {
@@ -176,6 +186,10 @@ button.btn-basket {
   padding-left: 45px;
 
   border-radius: 16px;
+}
+
+button.btn-basket {
+  padding-right: 35px;
 }
 
 button.btn-login-form svg,
@@ -346,7 +360,6 @@ button.btn-basket svg {
 
 .sliders {
   position: relative;
-  padding-top: 270px;
   margin-bottom: 40px;
 }
 
@@ -360,24 +373,27 @@ button.btn-basket svg {
 	display: block;
 }
 
-.slider-item img {
+//*.slider-item img {
   width: 1045px;
   margin-left: -522.5px;
   margin-top: -392px;
   position: absolute;
+  top: 0;
   left: 50%;
   z-index: -1;
-}
+}*//
 
 .slider-item h3 {
   margin: 0;
   padding: 0 220px;
   margin-bottom: 25px;
-
-  text-align: str
 }
 
 .slider-title {
+  margin: 0;
+  padding: 0 220px;
+  margin-bottom: 25px;
+	
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -521,8 +537,8 @@ button.btn-basket svg {
   opacity: 1;
 }
 
-.hits-item-wrepper,
-.product-item-wrepper {
+.hits-item-wrapper,
+.product-item-wrapper {
   position: relative;
 
   min-height: 325px;
@@ -858,7 +874,6 @@ button.btn-basket svg {
 
 .contacts-map {
   position: relative;
-  z-index: -1;
 }
 
 .contacts-map::before {
@@ -870,6 +885,7 @@ button.btn-basket svg {
   position: absolute;
   top: 140px;
   left: 280px;
+  z-index: 10;
 
   background-image: url("../img/pin.png");
   background-position: center;
