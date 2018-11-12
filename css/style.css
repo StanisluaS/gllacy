@@ -7,8 +7,8 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
-
   
+  background-color: #849d8f;  
 }
 
 .site-wrapper {  
@@ -974,8 +974,8 @@ button.btn-basket svg {
 
 .social {
   display: block;
-  min-width: 37px;
-  min-height: 37px;
+  min-width: 38px;
+  min-height: 38px;
   box-sizing: border-box;
 
   background-position: center;
