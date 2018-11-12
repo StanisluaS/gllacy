@@ -306,9 +306,11 @@ S11,4.019,11,6.5S8.981,11,6.5,11z"></path>
 
     <section class="modal modal-feedback">
       <h3 class="visually-hidden">Форма обратной связи</h3>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть форму обратной связи</span>
+      </button>
       <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
         <h3>Мы обязательно вам ответим!</h3>
-        <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи"></button>
         <p>
           <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
           <input class="feedback-name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
@@ -319,9 +321,11 @@ S11,4.019,11,6.5S8.981,11,6.5,11z"></path>
         </p>
         <p>
           <label class="visually-hidden" for="feedback-text">Текст обращения</label>
-          <textarea class="feedback-text" id="feedback-text" name="feedback-text" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea class="feedback-text" id="feedback-text" name="feedback-text" rows="8" cols="20" placeholder="Напишите что-нибудь..."></textarea>
         </p>
-        <button class="btn btn-modal-feedback" type="submit">Отправить</button>
+        <p class="btn-wrapper">
+          <button class="btn btn-modal-feedback" type="submit">Отправить</button>
+        </p>
       </form>
     </section>
   </body>
